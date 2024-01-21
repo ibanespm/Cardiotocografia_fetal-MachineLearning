@@ -196,7 +196,7 @@ def evaluate_model(y_true, y_pred):
 #display bar data
 def proporcions_dataset(count_label_1 , count_label_2 , count_label_3):
         plt.bar(
-        ["class 1(%d)"%count_label_1, "class 2(%d)"%count_label_2, "class 3(%d)"%count_label_3],
+        ["normal(%d)"%count_label_1, "sospechoso(%d)"%count_label_2, "patologico(%d)"%count_label_3],
         [count_label_1, count_label_2, count_label_3],
         color=["#ff0033", "#1120ff", "#22aa66"],
         width= 0.8)
@@ -207,7 +207,7 @@ def proporcions_dataset(count_label_1 , count_label_2 , count_label_3):
 if __name__ == '__main__':
 
     #import dataset
-    dataset = pd.read_csv('data\DataSet_CTG_train.csv')
+    dataset = pd.read_csv('D:\Documentos\MISCURSOS\Proyectos Git Hub\Cardiotocografia_fetal-MachineLearning\data\DataSet_CTG_train.csv')
 
     label_1 = dataset[dataset['CLASE'] ==1]
     label_2 = dataset[dataset['CLASE'] ==2]
@@ -266,7 +266,7 @@ if __name__ == '__main__':
     warnings.filterwarnings("ignore")
 
     # [6] test with test data
-    data_test = pd.read_csv('data\DataSet_CTG_test.csv')
+    data_test = pd.read_csv('D:\Documentos\MISCURSOS\Proyectos Git Hub\Cardiotocografia_fetal-MachineLearning\data\DataSet_CTG_test.csv')
 
     data_test = data_test.dropna()
     XTest = data_test.values
