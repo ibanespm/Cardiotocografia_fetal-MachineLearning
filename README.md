@@ -12,4 +12,6 @@ En la actualidad, con el avance de la tecnología en el ámbito de la inteligenc
 - KNN
 - Decision Tree
 
+
+
 #### ***Mas informacion result.pdf***
