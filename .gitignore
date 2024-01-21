@@ -1,0 +1,7 @@
+#folders
+__pycache/
+
+#file
+*.__pycache
+*.py.py
+*.test_conection.py
